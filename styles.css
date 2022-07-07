@@ -1,0 +1,136 @@
+:root {
+  --primary: #ea40a4;
+  --schoolar: rgb(20, 224, 13);
+  --business: rgb(58, 130, 238);
+  --personal: var(--primary);
+  --light: #EEE;
+  --dark: #313154;
+  --danger: rgb(255, 91, 87);
+  --grey: #888;
+
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --business-glow: 0px 0px 4px rgba(58, 130, 238, 0.75);
+  --personal-glow: 0px 0px 4px rgba(234, 64, 163, 0.75);
+  --schoolar-glow: 0px 0px 4px rgba(20, 224, 13, 0.75);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'montserrat', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom,var(--business), var(--primary));
+  height: 100vh;
+}
+
+.container {
+  width: 400px;
+  height: 600px;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+              /* PERFIL */
+
+.perfil .span {
+  color: var(--light);
+  font-size: 1.2rem;
+  margin: 10px auto;
+}
+#fecha {
+  color: var(--light);
+  padding: 50px 0 5px 0;
+}
+
+.agregar-tarea {
+  background-color: var(--light);
+  border-radius: 15px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  font-size: 1.6rem;
+}
+
+.agregar-tarea input {
+  width: 100%;
+  height: 100%;
+
+}
+
+.agregar-tarea img:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+.agregar-tarea img {
+  width: 40px;
+}
+.agregar-tarea input::placeholder {
+  font-size: 1.2rem;
+}
+
+
+input:not([type="radio"]):not([type="checkbox"]), button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: initial;
+}
+
+.greeting .title {
+  display: flex;
+}
+
+.greeting .title input {
+  margin-left: 0.5rem;
+  flex: 1 1 0%;
+  min-width: 0;
+}
+
+.greeting .title,
+.greeting .title input {
+  color: var(--light);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+
+
+
+          /* section tarea */
+
+.section-todo h3 {
+  color: var(--light);
+  margin: 20px auto;
+}
+
+.section-todo li {
+  display: flex;
+  background: linear-gradient(to bottom, var(--light), var(--danger));
+  border-radius: 15px;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.section-todo img {
+  width: 25px;
+}
+.section-todo img:hover {
+  cursor: pointer;
+}
+
+.section-todo > ul p {
+  font-size: 1.2rem;
+  color: var(--dark);
+}
+
+.line-through {
+  text-decoration: line-through;
+}

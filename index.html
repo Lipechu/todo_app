@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List App</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="perfil">
+      <div id="date">
+        <section class="greeting">
+          <div id="fecha"></div>
+          <h1 class="title">
+              ¡Hey! <input type="text" id="name" placeholder="Escribe tu nombre" />
+          </h1>
+        </section>
+        <p class="span">Hora de cumplir tus tareas!</p>
+      </div>
+    </div>
+    
+    <div class="agregar-tarea">
+      <input type="text" id="input" placeholder="Agregar nueva tarea">
+      <img id="botton-enter" src="assets/plus.svg" alt="Agregar tarea" />
+    </div>
+    
+    <div class="section-todo">
+      <h3>Estas son las tareas pendientes</h3>
+      <ul id="list">
+
+        <!-- <li>
+          <img id="0" data="realizado" onmouseout='this.src="assets/radio-circle-off.svg";' src="assets/radio-circle-off.svg" onmouseover="this.src='assets/cursor-cicle.svg';" >
+          <p class="text">Comprar pan</p>
+          <img id="0" data="eliminado" onmouseout="this.src='assets/trash.svg';" src="assets/trash.svg" onmouseover="this.src='assets/trash-delete.svg';" >
+        </li> -->
+
+      </ul>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
